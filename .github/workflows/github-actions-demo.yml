@@ -15,4 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Sync S3
+        uses: dmolik/sync-s3-action@v0.1.0     
       - run: echo "🍏 This job's status is ${{ job.status }}."
